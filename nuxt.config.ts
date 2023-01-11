@@ -12,6 +12,7 @@ export default defineNuxtConfig({
 	typescript: { shim: false },
 	build: { transpile: ["vuetify"] },
 	vite: { ssr: { noExternal: ["vuetify"] } },
+	ssr: false,
 	css: ["vuetify/styles", "@/assets/main.css"],
 	modules: [
 		"nuxt-icon",
