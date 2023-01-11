@@ -2,6 +2,10 @@
 
 ![Mockup of the landing page](/public//mockup.png)
 
+## Demo
+
+Demo can be found here [CatCare Demo](https://catcare.behonbaker.com/)
+
 ### Why?
 
 I got tired of styling the [HeadlessUI](https://headlessui.com/) components. They are nice but to be styling them for each project is a pain. Vuetify 3 is out now so I thought, why not get the components from Vuetify & the precision in styling that Tailwind offers 🤔.
