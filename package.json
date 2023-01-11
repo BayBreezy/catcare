@@ -1,0 +1,25 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"reset": "rm -rf .nuxt node_modules .output package-lock.json && npm install",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"devDependencies": {
+		"@kevinmarrec/nuxt-pwa": "^0.14.1",
+		"autoprefixer": "^10.4.13",
+		"nuxt": "3.0.0",
+		"nuxt-icon": "^0.1.8",
+		"postcss": "^8.4.21",
+		"sass": "^1.57.1",
+		"tailwindcss": "^3.2.4",
+		"vite-plugin-vuetify": "^1.0.1"
+	},
+	"dependencies": {
+		"gsap": "^3.11.4",
+		"vuetify": "^3.1.0"
+	}
+}

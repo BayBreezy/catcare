@@ -1,0 +1,7 @@
+$family: "Inter var", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+@use "vuetify/settings" with (
+	$body-font-family: $family,
+	$field-border-radius: 8px,
+	$field-focused-border-width: 1px
+);
