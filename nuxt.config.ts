@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 	typescript: { shim: false },
 	build: { transpile: ["vuetify"] },
 	vite: { ssr: { noExternal: ["vuetify"] } },
-	css: ["vuetify/styles", "@/assets/main.css"],
+	css: ["@/assets/custom.scss", "@/assets/main.css"],
 	modules: [
 		"nuxt-icon",
 		"@kevinmarrec/nuxt-pwa",
@@ -20,11 +20,8 @@ export default defineNuxtConfig({
 			nuxt.hooks.hook("vite:extendConfig", (config) =>
 				// @ts-ignore
 				// Customizing variables will show some errors in the console.
-				config.plugins.push(
-					vuetify({
-						styles: { configFile: "assets/custom.scss" },
-					})
-				)
+				// they also mess with the deployment on Netlify
+				config.plugins.push(vuetify())
 			);
 		},
 	],

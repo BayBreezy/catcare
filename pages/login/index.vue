@@ -42,7 +42,6 @@
 						<div class="float">
 							<VBtn
 								class="mt-5 text-capitalize text-subtitle-1 font-weight-regular"
-								rounded="lg"
 								flat
 								color="primary"
 								min-height="44"
